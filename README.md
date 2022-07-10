@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Technologies
 
 - React UI Framework: [Ant Design](https://ant.design/)
+- State Container: [Redux](https://redux.js.org/)
 
 NON-functional design:
 
