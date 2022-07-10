@@ -6,7 +6,7 @@ import PokeList from './components/List';
 import Searcher from './components/Searcher';
 import logo from './statics/logo.svg' 
 import { useDispatch, useSelector } from 'react-redux'
-import { setPokemons } from './actions';
+import { getPokemonsWithDetails } from './actions';
 
 function App() {
 
@@ -16,11 +16,11 @@ function App() {
   useEffect(()=> {
     const fetchPokemons = async () => {
       const pokemonRes = await getPokemon()
-      dispatch(setPokemons(pokemonRes))
+      dispatch(getPokemonsWithDetails(pokemonRes))
     }
 
     fetchPokemons()
-  }, [setPokemons])
+  }, [dispatch])
 
   return (
     <div className="App">
