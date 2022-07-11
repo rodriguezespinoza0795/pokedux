@@ -9,7 +9,8 @@ const PokeList = ({pokemons}) => {
                     key={pokemon.name} 
                     name={pokemon.name} 
                     image={pokemon.sprites.front_default}
-                    types={pokemon.types[0].type.name}/>
+                    types={pokemon.types.map(item => item.type.name).join(', ')}
+                    id={pokemon.id}/>
                 })
             }
 
