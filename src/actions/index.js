@@ -1,5 +1,5 @@
-import { SET_POKEMONS, SET_LOADING, SET_FAVORITE } from './types';
 import { getPokemonDetails } from '../api';
+import { SET_FAVORITE, SET_LOADING, SET_POKEMONS } from './types';
 
 export const setPokemons = (payload) => ({
   type: SET_POKEMONS,
@@ -8,20 +8,20 @@ export const setPokemons = (payload) => ({
 
 export const setLoading = (payload) => ({
   type: SET_LOADING,
-  payload
-})
+  payload,
+});
 
 export const setFavorite = (payload) => ({
   type: SET_FAVORITE,
-  payload
-})
+  payload,
+});
 
-export const getPokemonsWithDetails = (
-  pokemons = []) => 
+export const getPokemonsWithDetails =
+  (pokemons = []) =>
   async (dispatch) => {
-    const pokemonDetailed = await Promise.all(
-      pokemons.map((pokemon)=> getPokemonDetails(pokemon))
-    ) 
+    const pokemonsDetailed = await Promise.all(
+      pokemons.map((pokemon) => getPokemonDetails(pokemon))
+    );
 
-  dispatch(setPokemons(pokemonDetailed))
-}
+    dispatch(setPokemons(pokemonsDetailed));
+  };
