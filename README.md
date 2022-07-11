@@ -6,13 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - React UI Framework: [Ant Design](https://ant.design/)
 - State Container: [Redux](https://redux.js.org/)
+- [Redux ToolKit](https://redux-toolkit.js.org/)
 
-NON-functional design:
-
-- Search input
-- List of Pokemon Cards.
-
----
 
 ### Available Scripts
 
