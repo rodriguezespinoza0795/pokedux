@@ -1,13 +1,11 @@
 # Pokedux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Technologies
 
+- [Vite](https://vitejs.dev/)
 - React UI Framework: [Ant Design](https://ant.design/)
 - State Container: [Redux](https://redux.js.org/)
 - [Redux ToolKit](https://redux-toolkit.js.org/)
-
 
 ### Available Scripts
 

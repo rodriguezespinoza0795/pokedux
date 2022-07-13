@@ -3,7 +3,7 @@ import { Col, Spin } from 'antd';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import Searcher from './components/Searcher';
 import PokemonList from './components/PokemonList';
-import logo from './statics/logo.svg';
+import logo from './assets/logo.svg';
 import { fetchPokemonsWithDetails } from './slices/dataSlice';
 import './App.css';
 
